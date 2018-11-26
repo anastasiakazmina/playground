@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @visa.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @visa.body %>
+</p>
+
+<%= link_to 'Edit', edit_visa_path(@visa) %> |
+<%= link_to 'Back', visas_path %>

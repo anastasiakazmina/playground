@@ -1,0 +1,2272 @@
+Started GET "/" for 127.0.0.1 at 2018-11-25 20:34:34 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (5.3ms)
+Completed 200 OK in 28ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateUsers (20181125173800)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181125173800_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181125173800"]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-11-25 17:40:36.254472"], ["updated_at", "2018-11-25 17:40:36.254472"]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2018-11-25 20:41:08 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.4ms)
+Completed 200 OK in 22ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2018-11-25 20:41:16 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateCountries (20181125174234)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20181125174234_create_countries.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "countries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181125174234_create_countries.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181125174234"]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateDocuments (20181125174426)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "documents" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181125174426_create_documents.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181125174426"]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreatePersonalInformations (20181125174514)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "personal_informations" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181125174514_create_personal_informations.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181125174514"]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateQuestions (20181125174553)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181125174553_create_questions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181125174553"]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateAnswers (20181125174620)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "answers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181125174620_create_answers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181125174620"]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateVisas (20181125174706)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "visas" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181125174706_create_visas.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181125174706"]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2018-11-25 21:14:44 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.9ms)
+Completed 200 OK in 22ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2018-11-25 21:14:56 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/visa" for 127.0.0.1 at 2018-11-25 21:15:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/visa"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-11-26 00:30:28 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateVisaApplications (20181125201001)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20181125201001_create_visa_applications.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "visa_applications" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181125201001_create_visa_applications.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181125201001"]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateLandings (20181125212204)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "landings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181125212204_create_landings.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181125212204"]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateNavbars (20181125212429)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "navbars" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181125212429_create_navbars.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181125212429"]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2018-11-26 00:31:03 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.5ms)
+Completed 200 OK in 22ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-26 00:31:07 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 14ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 00:31:14 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (176.1ms)
+Completed 500 Internal Server Error in 195ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "logo.png" is not present in the asset pipeline.):
+    3: 
+    4:   <div>
+    5:     <header class="navbar">
+    6:       <a href=""><%= image_tag "logo.png" %></a>
+    7:       <li><a href="">Получить визу</a></li>
+    8:       <li><a href="">Мои документы</a></li>
+    9:       <li><a href="">Мои визы</a></li>
+  
+app/views/landings/index.html.erb:6:in `_app_views_landings_index_html_erb__2869390765638724534_70346062184560'
+Started GET "/landing" for 127.0.0.1 at 2018-11-26 00:31:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/landing"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/landing%D1%8B" for 127.0.0.1 at 2018-11-26 00:51:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/landing%D1%8B"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 00:51:59 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "logo.png" is not present in the asset pipeline.):
+    3: 
+    4:   <div>
+    5:     <header class="navbar">
+    6:       <a href=""><%= image_tag "logo.png" %></a>
+    7:       <li><a href="">Получить визу</a></li>
+    8:       <li><a href="">Мои документы</a></li>
+    9:       <li><a href="">Мои визы</a></li>
+  
+app/views/landings/index.html.erb:6:in `_app_views_landings_index_html_erb__2869390765638724534_70346062870140'
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 00:53:19 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (1.0ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (1645.6ms)
+Completed 200 OK in 1747ms (Views: 1741.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 00:57:34 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.5ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 49ms (Views: 44.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 00:57:37 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.2ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 52ms (Views: 48.1ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 00:58:30 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.2ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (195.4ms)
+Completed 200 OK in 269ms (Views: 256.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 00:58:51 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.2ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 50ms (Views: 46.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 00:58:55 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.5ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 45ms (Views: 41.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 00:59:05 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.2ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 41ms (Views: 36.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 00:59:08 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.2ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 44ms (Views: 40.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:00:10 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.2ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 59ms (Views: 55.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:08:47 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (1.1ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 60ms (Views: 55.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:08:51 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.4ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 49ms (Views: 44.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:09:03 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.2ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 53ms (Views: 48.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:09:06 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.2ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 42ms (Views: 38.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:15:32 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.5ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 82ms (Views: 78.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:15:35 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.2ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:15:36 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.2ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 66ms (Views: 62.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:15:37 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.2ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 47ms (Views: 43.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:15:37 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.3ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 47ms (Views: 42.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:15:39 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.2ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 46ms (Views: 42.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:15:46 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.5ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 48ms (Views: 45.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:21:53 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.4ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (207.0ms)
+Completed 200 OK in 290ms (Views: 277.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:37:56 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.5ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (216.7ms)
+Completed 200 OK in 293ms (Views: 281.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:38:05 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.2ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 49ms (Views: 42.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:38:42 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.2ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 49ms (Views: 46.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:39:41 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.2ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 55ms (Views: 52.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:39:45 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.3ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 49ms (Views: 44.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:40:28 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.2ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 54ms (Views: 48.5ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:42:21 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.2ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (209.1ms)
+Completed 200 OK in 307ms (Views: 295.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:42:35 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.2ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 54ms (Views: 46.3ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:49:18 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.4ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (211.2ms)
+Completed 200 OK in 289ms (Views: 276.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:49:44 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.2ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 45ms (Views: 38.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:50:15 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.3ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 61ms (Views: 56.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 01:51:59 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.3ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 42ms (Views: 37.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 02:12:49 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (433.7ms)
+Completed 500 Internal Server Error in 455ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/anna/Project/Erde/app/assets/config
+  /Users/anna/Project/Erde/app/assets/font
+  /Users/anna/Project/Erde/app/assets/images
+  /Users/anna/Project/Erde/app/assets/javascripts
+  /Users/anna/Project/Erde/app/assets/stylesheets
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/anna/Project/Erde/node_modules
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/popper_js-1.14.5/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/stylesheets
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/stylesheets
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/fonts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/images
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/stylesheets
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/stylesheets):
+    3: 
+    4:   <div>
+    5:     <header class="navbar">
+    6:       <a href=""><%= image_tag "logo.png" %></a>
+    7:       <li><a href="">Получить визу</a></li>
+    8:       <li><a href="">Мои документы</a></li>
+    9:       <li><a href="">Мои визы</a></li>
+  
+app/assets/stylesheets/application.css.scss:16
+app/views/landings/index.html.erb:6:in `_app_views_landings_index_html_erb__1203165561437118928_70202760594040'
+Started GET "/" for 127.0.0.1 at 2018-11-26 02:18:25 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.7ms)
+Completed 200 OK in 15ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 02:18:34 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (81.0ms)
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/anna/Project/Erde/app/assets/config
+  /Users/anna/Project/Erde/app/assets/font
+  /Users/anna/Project/Erde/app/assets/images
+  /Users/anna/Project/Erde/app/assets/javascripts
+  /Users/anna/Project/Erde/app/assets/stylesheets
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/anna/Project/Erde/node_modules
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/popper_js-1.14.5/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/stylesheets
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/stylesheets
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/fonts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/images
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/stylesheets
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/stylesheets):
+    3: 
+    4:   <div>
+    5:     <header class="navbar">
+    6:       <a href=""><%= image_tag "logo.png" %></a>
+    7:       <li><a href="">Получить визу</a></li>
+    8:       <li><a href="">Мои документы</a></li>
+    9:       <li><a href="">Мои визы</a></li>
+  
+app/assets/stylesheets/application.css.scss:16
+app/views/landings/index.html.erb:6:in `_app_views_landings_index_html_erb__1203165561437118928_70202797829040'
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 02:22:09 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (59.9ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/anna/Project/Erde/app/assets/config
+  /Users/anna/Project/Erde/app/assets/font
+  /Users/anna/Project/Erde/app/assets/images
+  /Users/anna/Project/Erde/app/assets/javascripts
+  /Users/anna/Project/Erde/app/assets/stylesheets
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/anna/Project/Erde/node_modules
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/popper_js-1.14.5/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/stylesheets
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/stylesheets
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/fonts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/images
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/stylesheets
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/stylesheets):
+    3: 
+    4:   <div>
+    5:     <header class="navbar">
+    6:       <a href=""><%= image_tag "logo.png" %></a>
+    7:       <li><a href="">Получить визу</a></li>
+    8:       <li><a href="">Мои документы</a></li>
+    9:       <li><a href="">Мои визы</a></li>
+  
+app/assets/stylesheets/application.css.scss:16
+app/views/landings/index.html.erb:6:in `_app_views_landings_index_html_erb__1203165561437118928_70202769462400'
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 02:25:28 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (51.3ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/anna/Project/Erde/app/assets/config
+  /Users/anna/Project/Erde/app/assets/font
+  /Users/anna/Project/Erde/app/assets/images
+  /Users/anna/Project/Erde/app/assets/javascripts
+  /Users/anna/Project/Erde/app/assets/stylesheets
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/anna/Project/Erde/node_modules
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/popper_js-1.14.5/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/stylesheets
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/stylesheets
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/javascripts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/fonts
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/images
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/stylesheets
+  /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.3/assets/stylesheets):
+    3: 
+    4:   <div>
+    5:     <header class="navbar">
+    6:       <a href=""><%= image_tag "logo.png" %></a>
+    7:       <li><a href="">Получить визу</a></li>
+    8:       <li><a href="">Мои документы</a></li>
+    9:       <li><a href="">Мои визы</a></li>
+  
+app/assets/stylesheets/application.css.scss:16
+app/views/landings/index.html.erb:6:in `_app_views_landings_index_html_erb__1203165561437118928_70202765793760'
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 02:25:40 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.9ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (4384.2ms)
+Completed 200 OK in 4534ms (Views: 4528.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 02:27:51 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.9ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 110ms (Views: 106.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 02:34:23 +0300
+  
+LoadError (cannot load such file -- /Users/anna/Project/Erde/config/routes.rb):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+activesupport (5.2.1) lib/active_support/dependencies.rb:281:in `block in load'
+activesupport (5.2.1) lib/active_support/dependencies.rb:253:in `load_dependency'
+activesupport (5.2.1) lib/active_support/dependencies.rb:281:in `load'
+railties (5.2.1) lib/rails/application/routes_reloader.rb:41:in `block in load_paths'
+railties (5.2.1) lib/rails/application/routes_reloader.rb:41:in `each'
+railties (5.2.1) lib/rails/application/routes_reloader.rb:41:in `load_paths'
+railties (5.2.1) lib/rails/application/routes_reloader.rb:20:in `reload!'
+railties (5.2.1) lib/rails/application/routes_reloader.rb:30:in `block in updater'
+activesupport (5.2.1) lib/active_support/file_update_checker.rb:83:in `execute'
+railties (5.2.1) lib/rails/application/routes_reloader.rb:10:in `execute'
+railties (5.2.1) lib/rails/application/finisher.rb:143:in `block (2 levels) in <module:Finisher>'
+activesupport (5.2.1) lib/active_support/callbacks.rb:426:in `instance_exec'
+activesupport (5.2.1) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.1) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+activesupport (5.2.1) lib/active_support/callbacks.rb:606:in `block (2 levels) in default_terminator'
+activesupport (5.2.1) lib/active_support/callbacks.rb:605:in `catch'
+activesupport (5.2.1) lib/active_support/callbacks.rb:605:in `block in default_terminator'
+activesupport (5.2.1) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+activesupport (5.2.1) lib/active_support/execution_wrapper.rb:110:in `run!'
+activesupport (5.2.1) lib/active_support/reloader.rb:115:in `run!'
+activesupport (5.2.1) lib/active_support/execution_wrapper.rb:72:in `block in run!'
+activesupport (5.2.1) lib/active_support/execution_wrapper.rb:69:in `tap'
+activesupport (5.2.1) lib/active_support/execution_wrapper.rb:69:in `run!'
+activesupport (5.2.1) lib/active_support/reloader.rb:64:in `run!'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-11-26 02:34:24 +0300
+  
+ActiveRecord::NoDatabaseError (No such file or directory @ dir_s_mkdir - /Users/anna/Project/Erde/db):
+  
+activerecord (5.2.1) lib/active_record/connection_adapters/sqlite3_adapter.rb:42:in `rescue in sqlite3_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/sqlite3_adapter.rb:17:in `sqlite3_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 02:36:04 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.4ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (251.2ms)
+Completed 200 OK in 332ms (Views: 316.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/navbars" for 127.0.0.1 at 2018-11-26 02:36:18 +0300
+Processing by NavbarsController#index as HTML
+  Rendering navbars/index.html.erb within layouts/application
+  [1m[36mNavbar Load (1.0ms)[0m  [1m[34mSELECT "navbars".* FROM "navbars"[0m
+  ↳ app/views/navbars/index.html.erb:15
+  Rendered navbars/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 82ms (Views: 75.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/navbars" for 127.0.0.1 at 2018-11-26 02:41:33 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by NavbarsController#index as HTML
+  Rendering navbars/index.html.erb within layouts/application
+  [1m[36mNavbar Load (0.5ms)[0m  [1m[34mSELECT "navbars".* FROM "navbars"[0m
+  ↳ app/views/navbars/index.html.erb:15
+  Rendered navbars/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 300ms (Views: 287.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 02:45:17 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (1.3ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:47
+  Rendered landings/index.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 117ms (Views: 107.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 02:49:51 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (1.6ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:54
+  Rendered landings/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 90ms (Views: 85.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 02:53:32 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 80ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 02:54:38 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 94ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 02:56:13 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 59ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 02:57:57 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 75ms (Views: 68.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 02:59:31 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 57ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 02:59:59 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 63ms (Views: 58.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:01:21 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 55ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:02:06 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 97ms (Views: 88.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:02:35 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 50ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:07:06 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 93ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:08:25 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 86ms (Views: 82.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:18:15 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (242.4ms)
+Completed 200 OK in 382ms (Views: 368.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:19:14 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (0.5ms)[0m  [1m[34mSELECT  "landings".* FROM "landings" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Landing Load (0.0ms)[0m  [1m[34mSELECT  "landings".* FROM "landings" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Landing Load (0.0ms)[0m  [1m[34mSELECT  "landings".* FROM "landings" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Landing Load (0.0ms)[0m  [1m[34mSELECT  "landings".* FROM "landings" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendered landings/index.html.erb within layouts/application (238.0ms)
+Completed 500 Internal Server Error in 249ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `svg_tag' for #<#<Class:0x00007fdb34c4daf8>:0x00007fdb352266f0>):
+    1: <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    2:   <!-- Just an image -->
+    3: <nav class="navbar navbar-light bg-light">
+    4:     <a href=""><%= svg_tag "logo.svg" %></a>
+    5: </nav>
+    6:   <div class="collapse navbar-collapse" id="navbarText">
+    7:     <ul class="navbar-nav mr-auto">
+  
+app/views/landings/index.html.erb:4:in `_app_views_landings_index_html_erb__83171264285848505_70289733007380'
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:21:57 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 78ms (Views: 72.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:23:06 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/anna/Project/Erde/app/views/landings/index.html.erb:4: syntax error, unexpected =>, expecting '}'
+...ut_buffer.append=( imag{:src => "logo.svg" );@output_buffer....
+...                             ^~):
+  
+app/views/landings/index.html.erb:4: syntax error, unexpected =>, expecting '}'
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:23:19 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/anna/Project/Erde/app/views/landings/index.html.erb:4: syntax error, unexpected =>, expecting '}'
+...put_buffer.append=( img{:src => "logo.svg" );@output_buffer....
+...                             ^~):
+  
+app/views/landings/index.html.erb:4: syntax error, unexpected =>, expecting '}'
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:24:06 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/anna/Project/Erde/app/views/landings/index.html.erb:4: syntax error, unexpected =>, expecting '}'
+...<a href="">'.freeze;img{:src => "logo.svg"} ;@output_buffer....
+...                             ^~
+/Users/anna/Project/Erde/app/views/landings/index.html.erb:4: syntax error, unexpected '}', expecting keyword_end
+....freeze;img{:src => "logo.svg"} ;@output_buffer.safe_append=...
+...                              ^):
+  
+app/views/landings/index.html.erb:4: syntax error, unexpected =>, expecting '}'
+app/views/landings/index.html.erb:4: syntax error, unexpected '}', expecting keyword_end
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:24:34 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 60ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:24:56 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 65ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:25:04 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 52ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:25:06 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 52ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:25:18 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:25:28 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 55ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:25:44 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 65ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:26:56 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 50ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:28:20 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 52ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:30:05 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 45ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/logo.svg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:30:15 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 62ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/logo.svg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:30:24 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 52ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/logo.svg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:30:33 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 68ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/logo.svg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:30:56 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 52ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Users/anna/Project/Erde/app/assets/images/logo.svg" for 127.0.0.1 at 2018-11-26 03:30:56 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/Users/anna/Project/Erde/app/assets/images/logo.svg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:31:38 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 57ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/%3Cimg%20src=" for 127.0.0.1 at 2018-11-26 03:31:38 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/%3Cimg%20src="):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:32:09 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 74ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/%3Cimg" for 127.0.0.1 at 2018-11-26 03:32:09 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/%3Cimg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:32:18 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 110ms (Views: 106.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/%3Cimg" for 127.0.0.1 at 2018-11-26 03:32:18 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/%3Cimg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:32:44 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 80ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:33:36 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 55ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:33:54 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 73ms (Views: 69.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:35:11 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 71ms (Views: 67.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:36:22 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 74ms (Views: 70.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:36:25 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 83ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:36:42 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 59ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:36:57 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 57ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:37:02 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:38:09 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:38:32 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 55ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:39:03 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  [1m[36mLanding Load (1.9ms)[0m  [1m[34mSELECT "landings".* FROM "landings"[0m
+  ↳ app/views/landings/index.html.erb:59
+  Rendered landings/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 61ms (Views: 54.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:43:17 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 59ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:44:22 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 58ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:45:07 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 50ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:45:40 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 72ms (Views: 68.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:48:50 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 74ms (Views: 70.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:49:22 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 60ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:49:36 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 60ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:49:55 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 51ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:52:12 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 50ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:53:38 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 56ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:53:40 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:55:24 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:57:01 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 44ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:59:11 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 55ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:59:27 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 70ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 03:59:40 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 66ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:00:40 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 67ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:01:50 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 55ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:03:25 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 57ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:03:51 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 56ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:04:00 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 60ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:05:37 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 51ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:07:17 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 55ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:07:26 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 55ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:08:15 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 55ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:08:23 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 62ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:09:02 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 49ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:09:10 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 56ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:10:04 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:11:02 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 70ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:12:24 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 57ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:12:59 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 52ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:13:28 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 67ms (Views: 63.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:14:12 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 54ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:15:30 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 60ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:15:55 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 61ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:16:44 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 97ms (Views: 92.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:17:09 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 64ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:18:36 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 65ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:18:50 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:19:31 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 62ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:19:45 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 61ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:20:01 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 56ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:20:48 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 66ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:23:35 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 61ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:24:45 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 73ms (Views: 69.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:25:39 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 54ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:38:44 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 100ms (Views: 93.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:43:40 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 79ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:50:06 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 109ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:51:35 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 102ms (Views: 97.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:54:26 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 69ms (Views: 65.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/%D1%82%D1%84%D0%BC%D0%B8%D1%84%D0%BA" for 127.0.0.1 at 2018-11-26 04:55:02 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/%D1%82%D1%84%D0%BC%D0%B8%D1%84%D0%BA"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/navbar" for 127.0.0.1 at 2018-11-26 04:55:08 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/navbar"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/navbar" for 127.0.0.1 at 2018-11-26 04:55:12 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/navbar"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/navbars" for 127.0.0.1 at 2018-11-26 04:55:17 +0300
+Processing by NavbarsController#index as HTML
+  Rendering navbars/index.html.erb within layouts/application
+  Rendered navbars/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 63ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/navbars" for 127.0.0.1 at 2018-11-26 04:57:04 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by NavbarsController#index as HTML
+  Rendering navbars/index.html.erb within layouts/application
+  Rendered navbars/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 345ms (Views: 326.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:57:08 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 68ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 04:58:41 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 54ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 05:03:10 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 91ms (Views: 85.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 05:03:20 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 92ms (Views: 88.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 05:03:30 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 50ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 05:05:38 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 69ms (Views: 66.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 05:05:41 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 59ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 05:06:30 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 66ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings" for 127.0.0.1 at 2018-11-26 05:06:40 +0300
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 85ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
